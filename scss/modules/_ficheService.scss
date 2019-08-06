@@ -1,0 +1,209 @@
+/**
+ * @author Emie Pelletier <emiepelletier@hotmail.com>
+ */
+
+/* Page fiche des services */
+.services {
+  &Fiche__entete {
+    background-image: url("../images/entete-image-mobile.svg");
+    height: 230px;
+    margin-top: 60px;
+
+    @media (min-width: $bureau) and (max-width: 980px) {
+      background-image: url("../images/fiche-entete-medium.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      margin-top: 80px;
+    }
+
+    @media (min-width: 981px) {
+      margin-top: -30px;
+      background-image: url("../images/fiche-services-entete.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+
+  &Fiche__titre {
+    padding-top: 120px;
+    line-height: 35px;
+
+    @media (min-width: $bureau) {
+      color: $blanc;
+      padding-top: 70px;
+      line-height: 70px;
+    }
+  }
+
+  &Fiche__bloc {
+    background-color: $gris;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    @media (min-width: $bureau) {
+      display: inline-block;
+    }
+
+    &Texte {
+      margin-bottom: 40px;
+
+      @media (min-width: $bureau) {
+        width: span(8 of 12);
+        display: inline-block;
+      }
+    }
+
+    &TexteEmphase {
+      margin-bottom: 40px;
+      text-align: center;
+
+      @media (min-width: 490px) and (max-width: $bureau) {
+        display: inline-block;
+        float: left;
+        margin-right: gutter(4);
+        margin-top: 0;
+        width: 240px;
+      }
+
+      @media (min-width: $bureau) and (max-width: 920px) {
+        margin-right: 20px;
+        margin-left: 15%;
+        float: left;
+        margin-top: 0;
+        width: 265px;
+      }
+
+      @media (min-width: 920px) {
+        margin-right: 20px;
+        float: left;
+        margin-left: 38%;
+        margin-top: 0;
+        width: 320px;
+      }
+    }
+
+    &Icone {
+      display: block;
+      margin: 0 auto 35px;
+      width: 150px;
+
+      @media (min-width: 490px) and (max-width: $bureau) {
+        display: inline-block;
+      }
+
+      @media (min-width: $bureau) {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: gutter(12);
+      }
+    }
+  }
+
+  &Fiche__conteneur {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 0 gutter(6);
+
+    @media (min-width: $bureau) {
+      padding: 0 gutter(12);
+    }
+  }
+}
+
+/* Bloc contact */
+.servicesFiche__blocContact {
+  margin: 0 auto;
+  width: 240px;
+  height: 220px;
+
+  @media (min-width: 490px) and (max-width: $bureau) {
+    width: 260px;
+    height: 220px;
+  }
+
+  @media (min-width: $bureau) {
+    height: 210px;
+    width: 235px;
+    float: left;
+  }
+}
+
+/* Insertion des pixels décoratifs */
+.services__pixel03 {
+  width: 190px;
+  height: 145px;
+  top: 178%;
+  left: 5%;
+  background-image: url(../images/pixel03.svg);
+
+  @media (min-width: 490px) and (max-width: $bureau) {
+    background-image: url(../images/pixel04.svg);
+    right: 5%;
+    top: 123%;
+  }
+
+  @media (min-width: $bureau) and (max-width: 920px) {
+    background-image: url(../images/pixel04.svg);
+    top: 102%;
+    left: 0;
+  }
+
+  @media (min-width: 920px) {
+    background-image: url(../images/pixel05.svg);
+    top: 100%;
+    left: 25%;
+  }
+}
+
+/* Bloc voir les réalisations */
+.voir-realisations {
+  position: relative;
+  width: 100%;
+  bottom: -89px;
+
+  @media (min-width: $bureau) {
+    height: 300px;
+    bottom: -90px;
+  }
+
+  &__image img {
+    width: 200px;
+  }
+
+  &__conteneur {
+    height: auto;
+    position: relative;
+    z-index: -1;
+
+    @media (min-width: $bureau) {
+      z-index: -1;
+      top: -12%;
+    }
+  }
+
+  &__titre {
+    text-align: center;
+    position: relative;
+    top: -30px;
+
+    @media (min-width: $bureau) {
+      top: -35px;
+    }
+  }
+
+  &__calque {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    opacity: 0.65;
+    left: 0;
+    top: 30px;
+    z-index: 2;
+
+    @media (min-width: $bureau) {
+      height: 301px;
+      top: 2px;
+    }
+  }
+}

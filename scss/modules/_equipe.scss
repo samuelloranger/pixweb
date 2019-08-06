@@ -1,0 +1,202 @@
+/**
+ * @author : Tommy Blouin - Boudreau
+ */
+
+.equipe {
+
+  &__entete {
+    background-color: $noir;
+    height: 280px;
+    margin-top: -40px;
+    background-image: url("../images/equipe-entete.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    @media(max-width: $bureau){
+      height: 325px;
+      background-image: url("../images/entete-image-mobile.svg");
+    }
+  }
+
+  &__titre {
+    color: $blanc;
+    padding-top: 95px;
+    @media (max-width: 320px) {
+      padding-top: 150px;
+
+    }
+  }
+
+  &__conteneur {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 130px auto 0;
+    &Bloc {
+
+      text-align: center;
+      padding-bottom: 50px;
+
+
+    }
+  }
+  &__conteneur-page {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 130px auto 0;
+  }
+
+
+
+  &__imgConteneur {
+    overflow: hidden;
+    img {
+      transition: 0.25s ease-in-out;
+      &:hover{
+      transform: scale(1.1);
+      }
+    }
+  }
+  &__effet-hover{
+      transition: 0.25s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+    }
+  }
+  &__texte-descriptif{
+    margin: 80px 0;
+    padding: 0  25px;
+    @media (max-width: $bureau) {
+    margin: 20px 0;
+      padding: 0;
+    }
+  }
+
+
+  &__texte-entete{
+    @include fontSize(34px);
+    font-family: robotomono-regular;
+    color: $blanc;
+    margin-top: -60px;
+    text-transform: none;
+    line-height: 40px;
+    max-width: 680px;
+  }
+
+  &__text-center {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  &__image{
+    @media (max-width: 320px) {
+      max-width: 320px;
+      max-height: 320px;
+    }
+  }
+
+
+/*page fiche*/
+
+&Fiche__entete {
+  background-color: $noir;
+  height: 175px;
+  margin-top: -65px;
+  background-image: url("../images/fiche-realisations-entete.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  @media(max-width: $bureau){
+    height: 325px;
+  }
+  }
+
+  &Fiche__titre {
+    color: $blanc;
+    padding-top: 35px;
+    @media (max-width: $bureau) {
+      padding-top: 150px;
+
+    }
+  }
+  &Fiche__conteneur {
+    max-width: 1000px;
+    margin: 30px auto 0;
+  }
+
+  &__flex {
+    display: flex;
+    @media (max-width: 320px) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+  }
+  &__BGGris{
+    background-color: #F2F2F2;
+    padding: 10px 30px 30px 10px;
+  }
+
+  &__article{
+    @media (max-width: 870px) {
+      padding-top: 20px;
+      margin-bottom: auto;
+    }
+    @media (min-width: $bureau) {
+      padding-top: 0;
+      margin-left: 20px;
+    }
+    @media (min-width: 871px) {
+      margin-top: 51px;
+    }
+
+  }
+
+&button {
+  display: inline-block;
+  border: 1.5px solid $noir;
+  padding: 3px 15px;
+}
+  &buttonS{
+
+    display: inline-block;
+    color: #5859C3;
+    @media (min-width: $bureau) {
+      margin-left: 25px;
+    }
+  }
+  &buttonP{
+
+    display: inline-block;
+    color: #5859C3;
+    @media (min-width: $bureau) {
+      margin-right: 25px;
+    }
+  }
+  &buttonP a {
+    margin-bottom: 24px;
+    color: #5859C3;
+  }
+
+  &buttonS a {
+    margin-bottom: 24px;
+    color: #5859C3;
+  }
+
+&button-rouge {
+  border-color: $rouge;
+  color: $rouge;
+  margin-bottom: 24px;
+}
+
+&button-retour {
+  background-image: url("../images/fleche-gauche-nav.svg");
+  background-repeat: no-repeat;
+  background-position: 3px;
+  background-size: 8px 10px;
+}
+
+}

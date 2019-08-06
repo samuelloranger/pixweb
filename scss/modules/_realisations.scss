@@ -1,0 +1,226 @@
+/**
+ * @author Rui Lancheros <ruilancheros@gmail.com>
+**/
+
+.realisations {
+  &_conteneur {
+    margin: 110px auto 0;
+    max-width: 1000px;
+    position: relative;
+    &-single{
+      margin: 30px auto 0;
+      @media (min-width: $bureau) and (max-width: 980px) {
+        width:100%;
+      }
+      @media(min-width: 981px) {
+        min-width: 1000px;
+      }
+    }
+  }
+  &_pixel{
+    &1{
+
+      @media (min-width: $bureau){
+        width:100px;
+        height:100px;
+        background-image: url("../images/pixel03.svg");
+        left: 0px;
+        top: 0px;
+        transform: rotate(-37deg);
+      }
+
+    }
+    &2{
+      @media (min-width: $bureau){
+        width: 145px;
+        height: 120px;
+        background-image: url("../images/pixel01.svg");
+        left: 91%;
+        top: 61%;
+      }
+    }
+  }
+  &__entete {
+    height: 290px;
+
+    width: 100%;
+    margin-top: -30px;
+    background-color: $noir;
+    color: $blanc;
+    background-image: url("../images/entete-image-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @media (min-width: $bureau) and (max-width: 980px) {
+      height: 230px;
+      background-image: url("../images/fiche-entete-medium.svg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      margin-top: 45px;
+    }
+    @media  (min-width: 980px) {
+      background-image: url("../images/fiche-realisations-entete.svg");
+    }
+    &-single{
+      @media  (min-width: 980px) {
+        margin-top: -10px;
+      }
+
+    }
+    &Texte{
+      padding-top: 69px;
+      @media(min-width: $bureau) {
+        padding-top: 25px;
+      }
+
+    }
+    &__titre{
+      padding-top: 100px;
+      @media(min-width: $bureau) {
+        padding-top: 105px;
+      }
+
+    }
+
+  }
+  &_texte-entete {
+    max-width: 720px;
+  }
+  &__button__conteneur{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    @media(min-width: $bureau) {
+      margin-top: 0;
+
+    }
+  }
+  &_texte-descriptif {
+    margin: 55px 0;
+    color: $noir;
+    @media(min-width: $bureau) {
+      margin: 45px 0;
+    }
+  }
+
+
+  &_fiche {
+    display: flex;
+    //background-color: #0d84e3;
+    flex-direction: column;
+    margin-top: 30px;
+    @media(min-width: $bureau) {
+      margin-top: 30px;
+      //flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      &:nth-child(even) {
+        flex-direction: row;
+
+      }
+    }
+  &-single{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    @media(min-width: $bureau) {
+      justify-content: space-between;
+    }
+  }
+    &Image {
+      //width: span(4 of 4);
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+      @media (min-width: $bureau) and (max-width: 800px) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media(min-width: 981px) {
+        width: 490px;
+        height: 490px;
+      }
+      &-single{
+        margin: 0 0 20px 0;
+        @media (min-width: 801px) and (max-width: 980px) {
+          width: 260px;
+          height: 260px;
+        }
+      }
+    }
+
+    &Block {
+      background-color: $gris;
+      //width: span(4 of 4);
+      padding: 30px;
+      margin: 10px;
+      @media(min-width: $bureau) {
+        width: span(6 of 12);
+
+        margin-top: 45px;
+        margin-bottom: 45px;
+      }
+      &-single{
+        width: 490px;
+        height: auto;
+        padding-top: 0;
+        margin: 0 10px 20px 10px;
+
+        @media (min-width: $bureau) and (max-width: 980px) {
+          width: 100%;
+          order: -1;
+          height: auto;
+        }
+
+        @media(min-width: 981px) {
+          margin: 0 0 20px 0;
+          height: 490px;
+
+        }
+        
+        &Bg{
+          background-image: url("../images/pixel03.svg");
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          background-position-x: 90%;
+          background-position-y: -25px;
+          @media  (min-width: 980px) {
+            background-image: url("../images/pixel04.svg");
+            background-position-x: 298px;
+            background-position-y: 380px;
+          }
+
+        }
+      }
+    }
+
+
+
+    &Titre {
+      margin-bottom: 3px;
+      margin-top: 0;
+      //color: $blanc;
+      @media(min-width: $bureau) {
+        margin-top: 0;
+        margin-bottom: 3px;
+      }
+    }
+
+    &Soustitre {
+      margin-top: 5px;
+      @media(min-width: $bureau) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+

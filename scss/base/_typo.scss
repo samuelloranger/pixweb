@@ -1,0 +1,72 @@
+/**
+  * @file Typographie
+  * @author Emie Pelletier <1761129@cegep-ste-foy.qc.ca>
+ **/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include fontSize(16px);
+  font-family: $fontePrimaire;
+  line-height: 1.375;
+  /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+  @media (min-width: $bureau) {
+    line-height: 1.5;
+  }
+}
+
+
+h1, .h1 {
+  @include fontSize(35px);
+  font-family: $fontePrimaireBold;
+}
+
+h2, .h2 {
+  @include fontSize(28px);
+  font-family: $fonteSecondaireMedium;
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  @include fontSize(18px);
+  font-family: $fonteSecondaireMedium;
+}
+
+h4, .h4 {
+  @include fontSize(18px);
+  font-family: cabin-regular;
+}
+
+@media(min-width: $bureau) {
+  h1, .h1 {
+    @include fontSize(45px);
+  }
+
+  h2, .h2 {
+    @include fontSize(30px);
+  }
+
+  h3, .h3 {
+    @include fontSize(24px);
+  }
+
+  h4, .h4 {
+    @include fontSize(20px);
+  }
+
+}
+
+
+// mettre le texte en gras
+.bold {
+  font-weight: 700;
+}
+.texte-jaune {
+  color: $jaune;
+}
+
+.texte-blanc {
+  color: $blanc;
+}

@@ -1,0 +1,69 @@
+/**
+  * @author Emie Pelletier <emiepelletier@hotmail.com>
+ **/
+
+/** Polices de caractères **/
+@font-face {
+  font-family: 'cabin-regular';
+  src: url("../fonts/cabin-regular-webfont.woff2") format("woff2"),
+  url("../fonts/cabin-regular-webfont.woff") format("woff"),
+  url("../fonts/cabin-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'cabin-bold';
+  src: url("../fonts/cabin-bold-webfont.woff2") format("woff2"),
+  url("../fonts/cabin-bold-webfont.woff") format("woff"),
+  url("../fonts/cabin-bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'robotomono-regular';
+  src: url("../fonts/robotomono-regular-webfont.woff2") format("woff2"),
+  url("../fonts/robotomono-regular-webfont.woff") format("woff"),
+  url("../fonts/robotomono-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'robotomono-medium';
+  src: url("../fonts/robotomono-medium-webfont.woff2") format("woff2"),
+  url("../fonts/robotomono-medium-webfont.woff") format("woff"),
+  url("../fonts/robotomono-medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'robotomono-bold';
+  src: url("../fonts/robotomono-bold-webfont.woff2") format("woff2"),
+  url("../fonts/robotomono-bold-webfont.woff") format("woff"),
+  url("../fonts/robotomono-bold.ttf") format("ttf");
+}
+
+$fontePrimaire: cabin-regular, Arial, sans-serif;
+$fontePrimaireMedium: cabin-medium, Arial, sans-serif;
+$fontePrimaireBold: cabin-bold, Arial, sans-serif;
+
+$fonteSecondaire: robotomono-regular, Arial, sans-serif;
+$fonteSecondaireMedium: robotomono-medium, Arial, sans-serif;
+$fonteSecondaireBold: robotomono-bold, Arial, sans-serif;
+
+/** Palette de couleurs **/
+
+// Utiliser http://chir.ag/projects/name-that-color
+// pour obtenir des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite
+// si la suggestion de name-that-color est trop étrange
+
+/* Couleurs de base */
+$gris: #F2F2F2;
+$blanc: #FFFFFF;
+$noir: #000000;
+$rouge: #F4395F;
+
+/* Autres couleurs */
+$jaune: #FDBC6E;
+$violet: #5859C3;
+$violetFonce: #5C4882;
+
+/** Points de rupture **/
+$bureau : 600px;
+$bureauLarge : 960px;

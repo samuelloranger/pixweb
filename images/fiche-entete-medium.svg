@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342px" height="110px" viewBox="0 0 342 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>fiche-entete-medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="270 72 288 72 288 54 270 54"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="108 36 126 36 126 18 108 18"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="18 54 36 54 36 36 18 36"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="162 54 180 54 180 36 162 36"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-9" points="198 18 216 18 216 0 198 0"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-11" points="288 36 306 36 306 18 288 18"></polygon>
+        <filter x="-38.9%" y="-27.8%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fiche-entete-medium" transform="translate(0.000000, 2.000000)">
+            <polygon id="Path" fill="#5C4882" points="252 36 270 36 270 18 252 18"></polygon>
+            <polygon id="Path" fill="#E03854" points="252 54 270 54 270 36 252 36"></polygon>
+            <polygon id="Path" fill="#E03854" points="252 90 270 90 270 72 252 72"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="234 18 252 18 252 0 234 0"></polygon>
+            <polygon id="Path" fill="#5859C3" points="234 54 252 54 252 36 234 36"></polygon>
+            <polygon id="Path" fill="#5C4882" points="234 72 252 72 252 54 234 54"></polygon>
+            <polygon id="Path" fill="#5C4882" points="234 108 252 108 252 90 234 90"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="270 36 288 36 288 18 270 18"></polygon>
+            <polygon id="Path" fill="#5859C3" points="270 54 288 54 288 36 270 36"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="270 90 288 90 288 72 270 72"></polygon>
+            <polygon id="Path" fill="#5859C3" points="288 18 306 18 306 0 288 0"></polygon>
+            <polygon id="Path" fill="#E03854" points="288 54 306 54 306 36 288 36"></polygon>
+            <polygon id="Path" fill="#E03854" points="288 72 306 72 306 54 288 54"></polygon>
+            <polygon id="Path" fill="#5859C3" points="306 36 324 36 324 18 306 18"></polygon>
+            <polygon id="Path" fill="#5C4882" points="306 72 324 72 324 54 306 54"></polygon>
+            <polygon id="Path" fill="#E03854" points="306 90 324 90 324 72 306 72"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="324 72 342 72 342 54 324 54"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="324 108 342 108 342 90 324 90"></polygon>
+            <polygon id="Path" fill="#E03854" points="324 18 342 18 342 0 324 0"></polygon>
+            <polygon id="Path" fill="#5859C3" points="324 36 342 36 342 18 324 18"></polygon>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFC681" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <polygon id="Path" fill="#5859C3" points="0 54 18 54 18 36 0 36"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="18 26 36 26 36 8 18 8"></polygon>
+            <polygon id="Path" fill="#E03854" points="18 54 36 54 36 36 18 36"></polygon>
+            <polygon id="Path" fill="#E03854" points="72 72 90 72 90 54 72 54"></polygon>
+            <polygon id="Path" fill="#5C4882" points="54 54 72 54 72 36 54 36"></polygon>
+            <polygon id="Path" fill="#E03854" points="90 54 108 54 108 36 90 36"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="90 18 108 18 108 0 90 0"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="108 54 126 54 126 36 108 36"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="108 72 126 72 126 54 108 54"></polygon>
+            <polygon id="Path" fill="#5859C3" points="126 18 144 18 144 0 126 0"></polygon>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#FF405F" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="#F4395F" fill-rule="evenodd" xlink:href="#path-5"></use>
+            </g>
+            <polygon id="Path" fill="#E03854" points="126 54 144 54 144 36 126 36"></polygon>
+            <polygon id="Path" fill="#E03854" points="126 90 144 90 144 72 126 72"></polygon>
+            <polygon id="Path" fill="#5859C3" points="144 36 162 36 162 18 144 18"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="144 54 162 54 162 36 144 36"></polygon>
+            <polygon id="Path" fill="#5859C3" points="144 72 162 72 162 54 144 54"></polygon>
+            <polygon id="Path" fill="#E03854" points="162 36 180 36 180 18 162 18"></polygon>
+            <polygon id="Path" fill="#E03854" points="162 72 180 72 180 54 162 54"></polygon>
+            <polygon id="Path" fill="#5859C3" points="180 90 198 90 198 72 180 72"></polygon>
+            <polygon id="Path" fill="#E03854" points="180 18 198 18 198 0 180 0"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="180 36 198 36 198 18 180 18"></polygon>
+            <polygon id="Path" fill="#5C4882" points="180 54 198 54 198 36 180 36"></polygon>
+            <polygon id="Path" fill="#5C4882" points="180 72 198 72 198 54 180 54"></polygon>
+            <polygon id="Path" fill="#5C4882" points="198 36 216 36 216 18 198 18"></polygon>
+            <polygon id="Path" fill="#FDBC6E" points="198 72 216 72 216 54 198 54"></polygon>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                <use fill="#6B6CDA" fill-rule="evenodd" xlink:href="#path-7"></use>
+            </g>
+            <polygon id="Path" fill="#FDBC6E" points="216 36 234 36 234 18 216 18"></polygon>
+            <polygon id="Path" fill="#E03854" points="216 72 234 72 234 54 216 54"></polygon>
+            <polygon id="Path" fill="#5859C3" points="216 90 234 90 234 72 216 72"></polygon>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                <use fill="#FF405F" fill-rule="evenodd" xlink:href="#path-9"></use>
+            </g>
+            <polygon id="Path" fill="#FFC681" points="198 108 216 108 216 90 198 90"></polygon>
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                <use fill="#FFC681" fill-rule="evenodd" xlink:href="#path-11"></use>
+            </g>
+        </g>
+    </g>
+</svg>

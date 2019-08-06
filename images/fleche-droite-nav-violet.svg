@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="43px" viewBox="0 0 22 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fleche-gauche-nav-violet" transform="translate(-52.000000, 1.000000)" stroke="#5859C3" stroke-width="2">
+            <path d="M72.7447,39.516301 L55.54635,22.366401 C55.02821,21.850001 54.74302,21.163301 54.74302,20.432601 C54.74302,19.702001 55.02821,19.015101 55.54635,18.498601 L72.6094,1.483621 C72.9498,1.144201 72.9498,0.593781 72.6094,0.254361 C72.2691,-0.084787 71.7174,-0.084787 71.3767,0.254361 L54.3139,17.269401 C53.46647,18.114401 53,19.237701 53,20.432601 C53,21.627401 53.46647,22.750601 54.3139,23.595601 L71.512,40.745601 C71.6824,40.915301 71.9051,41.000001 72.1284,41.000001 C72.3513,41.000001 72.5745,40.915301 72.7447,40.745601 C73.0851,40.406101 73.0851,39.855701 72.7447,39.516301" id="Path" transform="translate(63.000000, 20.500000) scale(-1, 1) translate(-63.000000, -20.500000) "></path>
+        </g>
+    </g>
+</svg>

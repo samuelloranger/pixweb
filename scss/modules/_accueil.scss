@@ -1,0 +1,359 @@
+/**
+ * @author: Samuel Loranger <samuelloranger@gmail.com>
+ */
+
+.accueil{
+  &__en-tete{
+    background-color: black;
+    padding-top: 3rem;
+    margin-top: 1rem;
+
+    @media(min-width: $bureau){
+      margin-top: 0;
+      padding-top: 0;
+
+      &__flexFix{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        @media(min-width: 800px){
+          margin-top: 8%
+        }
+
+        @media(min-width: 850px){
+          margin-top: 5%;
+        }
+
+        @media(min-width: ($bureauLarge - 59px)) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__titre{
+      color: white;
+      padding-bottom: 3%;
+      font-family: $fonteSecondaire;
+      margin-bottom: 0;
+
+      &:first-child{
+        padding-bottom: 0;
+
+        @media(min-width: $bureau){
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(2){
+        margin-top: 0;
+      }
+
+    }
+
+    &__imgfix{
+      background-image: url("../images/accueil-entete-mobile.svg");
+      background-size: 95%;
+      background-repeat: no-repeat;
+      background-position-y: 65%;
+      background-position-x: right;
+
+      @media(min-width: $bureau){
+        background-image: url("../images/accueil-entete-desktop.svg");
+        //max-width: 95%;
+        width: 85%;
+      }
+    }
+
+    &__ampoule{
+      margin-top: 7%;
+      margin-left: 16%;
+      padding-top: 0%;
+      width: 25%;
+      padding-bottom: 5%;
+
+      @media(min-width: $bureau) {
+        margin-top: 0%;
+        margin-left: 11%;
+        padding-top: 5%;
+        width: 12%;
+        padding-bottom: 10%;
+      }
+    }
+
+
+
+    &__titlefix{
+      display: flex;
+      flex-direction: column;
+      padding-left: 22px;
+
+      @media(min-width: $bureau){
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__realisations{
+    &__titre{
+      text-align: center;
+    }
+
+    &__images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 5em;
+
+      &__image{
+        display: block;
+        position: relative;
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 auto 1.2em auto;
+        overflow: hidden;
+
+        @media(min-width: $bureau){
+          width: 12em;
+          height: 12em;
+          margin: 0 0 1.2em 0;
+        }
+
+        @media(min-width: 768px){
+          width: 16em;
+          height: 16em;
+        }
+
+        @media(min-width: $bureauLarge){
+          width: 20em;
+          height: 20em;
+        }
+
+        img{
+          max-width: 100%;
+          transition: 0.25s ease-in-out;
+        }
+
+        span{
+          position: absolute;
+          transition: 0.25s ease-in-out;
+          background-color: rgba(0,0,0, 0.7);
+          color: white;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 1.2em;
+          padding-top: 100%;
+          padding-left: 10%;
+          padding-right: 10%;
+          opacity: 0;
+          font-family: $fonteSecondaireBold;
+        }
+
+        &:hover{
+          img{
+            transform: scale(1.1);
+
+            &:hover{
+              transform: scale(1.0);
+            }
+          }
+
+          span{
+            opacity: 1;
+            padding-top: 50%;
+
+            @media(min-width: 768px){
+              padding-top: 75%;
+            }
+          }
+        }
+      }
+
+      &__lienRealisations{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 1.2em auto;
+
+        &__bgFix{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          background-image: url("../images/pixel03.svg");
+          background-position-x: 95%;
+          background-position-y: 15%;
+          background-repeat: no-repeat;
+        }
+
+        @media(min-width: $bureau){
+          width: 12em;
+          height: 12em;
+          margin: 0 0 1.2em 0;
+        }
+
+        @media(min-width: 768px){
+          width: 16em;
+          height: 16em;
+        }
+
+        @media(min-width: $bureauLarge){
+          width: 19em;
+          height: 19em;
+        }
+
+        a{
+          color: white;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+          font-weight: bold;
+          @include fontSize(30px);
+          transition: 0.25s ease-in-out;
+          padding-left: 20%;
+          padding-right: 20%;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  &__equipe{
+    padding-top: 35%;
+    padding-bottom: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/pixel-accueil-mobile.svg");
+
+    @media(min-width: $bureau){
+      background-image: url("../images/pixel-accueil.svg");
+      padding-top: 11%;
+      padding-bottom: 11%;
+    }
+
+    &__backgroundFix{
+      background-color: $noir;
+
+      div{
+        padding: 20% 2%;
+
+        @media(min-width: $bureau){
+          padding-top: 4%;
+          padding-bottom: 5%;
+        }
+      }
+    }
+
+    &__titre{
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__articles{
+    margin-bottom: 20%;
+
+    @media(min-width: $bureau){
+      margin-bottom: 0;
+    }
+
+    &__titre{
+      text-align: center;
+    }
+
+    &__article{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media(min-width: $bureau){
+        flex-direction: row-reverse;
+      }
+
+      &:nth-of-type(2){
+        @media(min-width: $bureau){
+          flex-direction: row;
+        }
+      }
+
+      &__image{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+
+        @media(min-width: $bureau){
+          height: 375px;
+          margin-bottom: 0;
+          flex-direction: column;
+        }
+      }
+
+      &__contenu{
+        margin-bottom: 8%;
+        background-color: $gris;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(min-width: $bureau){
+          //height: 375px;
+          max-width: span(8 of 12);
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        h3{
+          text-align: center;
+          padding: 5px 25px;
+
+          @media(min-width: $bureau){
+            text-align: left;
+            padding: 0;
+            margin-bottom: 0;
+          }
+        }
+
+        p{
+          display: none;
+          font-family: $fontePrimaire;
+
+          @media(min-width: $bureau){
+            display: inline-block;
+          }
+        }
+
+        &__lien{
+          margin: 24px auto;
+
+          @media(min-width: $bureau){
+            width: 25%;
+            margin: 0;
+            margin-bottom: 24px;
+            min-width: 95px;
+          }
+        }
+      }
+    }
+
+    &__btnLien{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 12%;
+    }
+  }
+}

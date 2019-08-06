@@ -1,0 +1,182 @@
+/**
+ * @author Samuel Loranger <samuelloranger@gmail.com>
+*/
+
+.footerClear{
+  display: flex;
+  flex-flow: wrap;
+
+  &__image{
+    display: flex;
+
+    &__pixelsDesktop{
+      display: none;
+
+      @media(min-width: $bureau){
+        display: block;
+      }
+
+    }
+
+    &__pixelsMobile{
+
+      @media(min-width: $bureau){
+        display: none;
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: $noir;
+  width: 100%;
+  color: $blanc;
+  background-repeat: repeat;
+  position: relative;
+
+  &__contenu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media(min-width: $bureau){
+      flex-direction: row;
+    }
+
+    &__logo-sociaux{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      &__logo{
+        margin: 8% auto;
+        width: 80%;
+        display: block;
+
+        @media(min-width: $bureau){
+          width: 100%;
+          margin-left: 0;
+       }
+      }
+
+      &__sociaux{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        @media(min-width: $bureau){
+          justify-content: space-between;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        a{
+          width: 45px;
+          height: 45px;
+          img{
+            transition: 0.25s ease-in-out;
+
+            &:hover{
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__widget{
+    ul{
+      h3 {
+        display: flex;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 29px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-y: 6px;
+          margin-right: 10px;
+
+          @media(min-width: $bureau){
+            width: 22px;
+            height: 35px;
+          }
+        }
+      }
+
+      a{
+        color: white;
+        display:block;
+        transition: 0.25s ease-in-out;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__gauche{
+      margin-bottom: 5%;
+      ul h3::before{
+        background-image: url("../images/icone-localisation.svg");
+      }
+
+    }
+
+    &__droite ul h3::before{
+      background-image: url("../images/icone-conversation.svg");
+      width: 28px;
+
+      @media(min-width: $bureau){
+        width: 32px
+      }
+    }
+  }
+
+  &__credits{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: $fontePrimaire;
+    padding: 5px 0;
+    margin-top: 10%;
+
+    @media(min-width: $bureau){
+      margin-top: 0;
+    }
+
+    p{
+      font-size: 80%;
+    }
+  }
+
+  aside{
+    p{
+      font-family: $fonteSecondaire;
+      @include fontSize(14px);
+
+    }
+  }
+
+  &__pixels{
+    display: block;
+    width: 50%;
+    height: 30%;
+    background-size: contain;
+    background-image: url("../images/pixel-design-footer.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+
+    @media(min-width: $bureau){
+      bottom: 5%;
+      width: 18%;
+      height: 53%;
+    }
+  }
+}

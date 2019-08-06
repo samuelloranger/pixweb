@@ -1,0 +1,160 @@
+/**
+ * @author Emie Pelletier <1761129@cegep-ste-foy.qc.ca>
+ */
+
+// Styles généraux pour les boutons
+.button {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 8px 16px;
+  line-height: normal;
+  transition: 0.25s ease-in-out;
+  text-align: center;
+  @include fontSize(18px);
+
+  &:hover, &:active, &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.button-rouge {
+  border-color: $rouge;
+  color: $rouge;
+}
+
+.button-blanc {
+  color: $blanc;
+  border-color: $blanc;
+}
+
+.button-violet{
+  color: $violet;
+  border-color: $violet;
+}
+
+.btnMenu{
+  width: 45px;
+  height: 30px;
+  border: none;
+  color: white;
+  padding: 0px;
+  background-color: rgba(0,0,0,0);
+  margin-top: 12px;
+
+  &:focus{
+    outline: none;
+  }
+
+  @media(min-width: ($bureauLarge - 60px)){
+    display: none;
+  }
+}
+
+.btnCarre {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  border: 1.5px white solid;
+  font-family: $fonteSecondaire;
+  padding: 5px 25px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+
+  &:hover{
+    color: white;
+    transform: scale(1.1);
+  }
+
+  @media(min-width: $bureau){
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+.btnLien{
+  color: $rouge;
+  padding: 5px 10px;
+  display: block;
+  text-align: center;
+  font-family: $fonteSecondaire;
+  border: 1.5px solid $rouge;
+  box-sizing: border-box;
+  width: 60%;
+  transition: 0.25s ease-in-out;
+
+  @media(min-width: $bureau){
+    width: 180px;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+    color: $rouge;
+  }
+}
+
+/* Bouton pour navigation séquentielle */
+.button__conteneur {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+
+  @media (min-width: $bureau) {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  & a {
+    display: inline-block;
+    line-height: normal;
+    border-color: $violet;
+    border-style: solid;
+    border-width: 1.5px;
+    padding: 8px 15px;
+    transition: 0.25s ease-in-out;
+    margin-top: 45px;
+    color: $violet;
+    text-align: center;
+    @include fontSize(18px);
+
+    &:hover, &:active, &:focus {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Bouton le bloc voir les réalisations */
+.button-realisations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  transition: 0.25s ease-in-out;
+
+  &:hover, &:active, &:focus {
+    transform: scale(1.1) translate(-50%, -50%);
+  }
+
+  @media (min-width: $bureau) {
+    position: absolute;
+    z-index: 3;
+    transition: 0.25s ease-in-out;
+
+    &:hover, &:active, &:focus {
+      transform: scale(1.1) translate(-50%, -50%);
+    }
+  }
+}
+
+/* Bouton pour les pages de 2e niveau */
+.button-retour {
+  background-image: url("../images/fleche-gauche-nav-rouge.svg");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-size: 10px 16px;
+  margin: 20px 0 10px auto;
+  padding: 10px 10px 6px 20px;
+}

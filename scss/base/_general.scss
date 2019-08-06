@@ -1,0 +1,23 @@
+/**
+ * @author Samuel Loranger <samuelloranger@gmail.com>
+ **/
+
+a {
+  color: $noir;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+/* Insertion des pixels */
+.pixel {
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+}
